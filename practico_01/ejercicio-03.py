@@ -5,4 +5,11 @@
 
 
 def operacion(a, b, multiplicar):
-    pass
+    if multiplicar:
+        return a * b
+    elif multiplicar == False and b != 0:
+        return a / b
+    else:
+        return "Operacion no valida"
+
+print(operacion(1, 0, 0))
